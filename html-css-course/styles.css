@@ -1,0 +1,103 @@
+/* Feito exclusivamente para a aula de introdução a criação de websites com HTML5 e CSS3. 
+   Na prática, creio que iria preferir usar SASS/CSS e Bootstrap */
+
+body {
+  margin: 10;
+  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 3px solid #0494ef;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  text-shadow: 3px 2px #fcfcfc;
+  color: #0494ef;
+}
+.subtitle,
+.post_title,
+ul {
+  color: #0494ef;
+}
+
+.post {
+  background-color: #fcfcfc;
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid #0494ef;
+  border-radius: 5px;
+  width: 65%;
+  color: #27c486;
+}
+
+.post:hover {
+  box-shadow: 3px 4px #595959;
+  transform: scale(1.1);
+}
+
+/* === PROFILE PHOTO === */
+
+.mussum {
+  border-radius: 50%;
+  box-shadow: 3px 4px #fcfcfc;
+}
+
+.mussum:hover {
+  box-shadow: 3px 4px #595959;
+  transform: scale(1.1);
+}
+
+/* === FOOTER === */
+
+a {
+  text-decoration: none;
+  color: #0494ef;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #0494ef;
+}
+a:hover {
+  text-decoration: none;
+  color: #bc7cba;
+}
+a:active {
+  text-decoration: none;
+  color: #bc7cba;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.contatos {
+  color: #0494ef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list {
+  margin: 3px;
+}
+
+.copywrite {
+  display: flex;
+  justify-content: center;
+  color: #0494ef;
+  font-style: oblique;
+}
