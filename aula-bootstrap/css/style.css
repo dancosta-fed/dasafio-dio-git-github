@@ -1,0 +1,31 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.quem-somos {
+  background-color: #d9d9d9;
+}
+.margin {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.img-qm-somos {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+h3,
+h4,
+h6 {
+  color: #8c8c8c;
+}
+
+.cacildis {
+  border-radius: 10px;
+  box-shadow: 2px 3px #fcfcfc;
+}
+
+.cacildis:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
