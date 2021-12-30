@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+/* === VARIABLES === */
+
+$container-bg: #fccec2;
+$bg-color: #f56b49;
+$font-color: #ff5124;
+$btn-bg: #fccec2;
+$btn-color: lightcoral;
+$num-color: #d91e2b;
+
+/* === Components === */
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    color: $font-color;
+    font-weight: 800;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:$bg-color;
+}
+
+.btn-count {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid $font-color;
+    background-color: $btn-bg;
+    color: $btn-color;
+    font-size: 16pt;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: $bg-color;
+        color: $container-bg;
+    }
+
+}
+
+.btn{
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#counter {
+    display: flex;
+    justify-content: center;
+}
+
+#currentNumber {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 16pt;
+    color: $num-color;
+    font-weight: 800;
+    font-size: 35px;
+    
+}
+
+.box{
+    border: 2px solid $font-color;
+    padding: 5px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: $container-bg;
+    margin-top: 170px;
+}
