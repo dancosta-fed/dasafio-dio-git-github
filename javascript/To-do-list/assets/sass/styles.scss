@@ -113,21 +113,39 @@ h5 {
     font-family: 'Poppins',sans-serif;
     border: 2px solid $font-color;
     margin-left: 3px;
-    // opacity: 0.6;
-    // pointer-events: none;
+    opacity: 0.6;
+    pointer-events: none;
 
     &:hover{
         background-color: $font-color;
         color: $shadow-color;
         border: 2px solid $shadow-color;
     }
+
 }
 
-// .ativo{
-//     opacity: 1;
-//     pointer-events: auto;
-// }
+#newtask button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
 
+
+.tasks{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-left: 5px;
+    width: 100%;
+}
+
+li{
+    font-size: 20px;
+    background-color: $container-bg;
+    color: $font-color;
+    margin-bottom: 2px;
+    padding: 2px;
+    border-radius: 3px;
+}
 
 
 #clear-list{

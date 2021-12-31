@@ -1,17 +1,20 @@
 const userInput = document.querySelector(".to-do input");
 const addBtn = document.querySelector(".to-do button");
-const toDoList = document.querySelector(".tasks")
+const toDoList = document.querySelector(".tasks");
 
-userInput.onekeyup = ()=>{
-    let userData = userInput.value; //voltar aqui para resolver essa situação!!!!
+
+userInput.onkeyup = ()=>{
+    let userData = userInput.value; 
         if(userData.trim() != 0){  
-            addBtn.classList.add("ativo"); 
-    } else {
-            addBtn.classList.remove("ativo");
+            addBtn.classList.add("active"); 
+    } else if (userData.trim() === 0){
+            addBtn.classList.remove("active");
     }
 }
+showTasks(); //Pra ter as tasks ao atualizar a página!
 
-addBtn.onclick = ()=>{
+addBtn.onclick = (e)=>{
+    e.preventDefault()
     let userData = userInput.value;
     let getLocalStorage = localStorage.getItem("Nova Lista");
     if(getLocalStorage === null){
@@ -33,30 +36,57 @@ function showTasks(){
     }
     let newLiTag = '';
     listArr.forEach((element, index) =>{
-        newLiTag = `<li>${element}<span><i class="fas fa-trash"></i></span></li>`;
-        console.log('teste');
+        newLiTag += `<li class="user-input"><input type="checkbox" id="c-box">${element}</li>`;
     });
     toDoList.innerHTML = newLiTag;
-}    
+    userInput.value = "";
+}
+
+
+doneTask();
+function doneTask(){
+    // const cBox = document.querySelector('#c-box:checked') !== null;
+    const cBox = document.querySelector('#c-box');
+    const domLi = document.querySelector('li');
+    console.log(domLi);
+
+    let activeBox = cBox.setAttribute(true, "checked");
+    
+    // activeBox.forEach(element => {
+    //     console.log('funcionou');
+    // });
+
+
+    // forEach (cBox.setAttribute(true, "checked")){
+    //     console.log('funcionou');
+    // } 
+}
+// doneTask();
 
 
 
 
-
-
-
-// document.querySelector('#push').onclick = function(){
-//     if (document.querySelector('#newtask input').value){
-//             document.querySelector('#tasks').innerHTML += `
-//             <div class="task">
-//                 <span id="taskname">
-//                     ${document.querySelector('#newtask input').value}
-//                 </span>
-//                 <button class="delete">
-//                     <i class="far fa-trash-alt"></i>
-//                 </button>
-//             </div>
-//         `;
-
-//     }
+//cBox.addEventListener("checked", "false" );
+//     // cBox.innerHTML= `<del>${element}}</del>`;
+//     console.log('Deu certo!');
+// } else{
+//     console.log('deu bom!')
 // }
+
+// // checkBox();
+// function checkBox(){
+//     console.log('teste2');
+//     let cBox = document.querySelectorAll(".user-input");
+//     console.log(cBox);
+
+//     // if(cBox.setAttribute('checked', true)){
+//     //     // cBox.innerHTML= `<del>${element}}</del>`;
+//     //     console.log('Deu certo!');
+//     // } else{
+//     //     console.log('deu bom!')
+//     // }
+// }
+
+
+
+
