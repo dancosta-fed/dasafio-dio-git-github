@@ -124,8 +124,18 @@ li {
   background-color: #fccec2;
   color: #ff5124;
   margin-bottom: 2px;
-  padding: 2px;
+  padding: 5px;
   border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.far {
+  margin-right: 2px;
+}
+.far:hover {
+  cursor: pointer;
 }
 
 #clear-list {

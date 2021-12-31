@@ -39,23 +39,24 @@ function showTasks(){
     }
     let newLiTag = '';
     listArr.forEach((element, index) =>{
-        newLiTag += `<li class="user-input"><input type="checkbox" id="c-box" onclick = "taskDone(${index})";  >${element}</li>`;
+        newLiTag += `<li class="user-input"></i><p class="lista">${element}</p><span onclick = "taskDone(${ index})"><i class="far fa-trash-alt"></span></li>`;
     });
     toDoList.innerHTML = newLiTag;
     userInput.value = "";
 }
 
-// ==== excluindo itens da lista ==== //
+// ==== removing itens da lista ==== //
 
 
 function taskDone(index){
+    let liItem = document.querySelector(".user-input")
     let getLocalStorage = localStorage.getItem("Nova Lista");
     listArr = JSON.parse(getLocalStorage);
+    
     listArr.splice(index, 1); // removing the particular li
 
     // update
     localStorage.setItem("Nova Lista", JSON.stringify(listArr));
     showTasks();
-
-
 }
+
