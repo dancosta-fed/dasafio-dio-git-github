@@ -2,7 +2,7 @@ const userInput = document.querySelector(".to-do input");
 const addBtn = document.querySelector(".to-do button");
 const toDoList = document.querySelector(".tasks");
 
-
+// ==== Fazendo um botão de ADD ficar disabled até que algo seja inserido ==== //
 userInput.onkeyup = ()=>{
     let userData = userInput.value; 
         if(userData.trim() != 0){  
@@ -11,6 +11,9 @@ userInput.onkeyup = ()=>{
             addBtn.classList.remove("active");
     }
 }
+
+// ==== Adicionando os intens à lista ==== //
+
 showTasks(); //Pra ter as tasks ao atualizar a página!
 
 addBtn.onclick = (e)=>{
@@ -36,57 +39,23 @@ function showTasks(){
     }
     let newLiTag = '';
     listArr.forEach((element, index) =>{
-        newLiTag += `<li class="user-input"><input type="checkbox" id="c-box">${element}</li>`;
+        newLiTag += `<li class="user-input"><input type="checkbox" id="c-box" onclick = "taskDone(${index})";  >${element}</li>`;
     });
     toDoList.innerHTML = newLiTag;
     userInput.value = "";
 }
 
-
-doneTask();
-function doneTask(){
-    // const cBox = document.querySelector('#c-box:checked') !== null;
-    const cBox = document.querySelector('#c-box');
-    const domLi = document.querySelector('li');
-    console.log(domLi);
-
-    let activeBox = cBox.setAttribute(true, "checked");
-    
-    // activeBox.forEach(element => {
-    //     console.log('funcionou');
-    // });
+// ==== excluindo itens da lista ==== //
 
 
-    // forEach (cBox.setAttribute(true, "checked")){
-    //     console.log('funcionou');
-    // } 
+function taskDone(index){
+    let getLocalStorage = localStorage.getItem("Nova Lista");
+    listArr = JSON.parse(getLocalStorage);
+    listArr.splice(index, 1); // removing the particular li
+
+    // update
+    localStorage.setItem("Nova Lista", JSON.stringify(listArr));
+    showTasks();
+
+
 }
-// doneTask();
-
-
-
-
-//cBox.addEventListener("checked", "false" );
-//     // cBox.innerHTML= `<del>${element}}</del>`;
-//     console.log('Deu certo!');
-// } else{
-//     console.log('deu bom!')
-// }
-
-// // checkBox();
-// function checkBox(){
-//     console.log('teste2');
-//     let cBox = document.querySelectorAll(".user-input");
-//     console.log(cBox);
-
-//     // if(cBox.setAttribute('checked', true)){
-//     //     // cBox.innerHTML= `<del>${element}}</del>`;
-//     //     console.log('Deu certo!');
-//     // } else{
-//     //     console.log('deu bom!')
-//     // }
-// }
-
-
-
-
