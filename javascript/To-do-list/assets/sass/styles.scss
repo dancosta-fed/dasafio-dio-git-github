@@ -1,0 +1,96 @@
+
+/* === VARIABLES === */
+
+$container-bg: #fccec2;
+$inc-color: #f56b49;
+$font-color: #ff5124;
+$bg-color: #3CBC8D;
+$btn-bg: lightcoral;
+$btn-color: #f56b49;
+$num-color: #0494ef;
+$copyright: #fccec2;
+
+/* === Components === */
+* {
+    font-family: 'Open Sans', sans-serif;
+    color: $font-color;
+    font-weight: 800;
+}
+html{
+    margin:0px;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    background-color: $bg-color;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: $bg-color;
+    border: 2px solid $font-color;
+    width: 65%;
+    padding: 20px;
+    background-color: $btn-color;
+}
+
+
+.list{
+    display: flex;
+    justify-content: center;
+}
+
+#task-form {
+    display: flex;
+    justify-content: center;
+ }
+
+ #task-input{
+    
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid $font-color;
+    border-radius: 4px;
+
+    &:hover{
+        border: 2px solid $container-bg;
+    }
+
+    &:focus{
+       outline: none !important;
+    }
+    
+ }
+
+
+
+ button{
+    margin-left: 10px;
+    border-radius: 3px;
+    
+
+    &:hover{
+        cursor: pointer;
+        background-color: $font-color;
+        color: $container-bg;
+    }
+ }
+
+h1,
+h5{
+    text-transform: uppercase;
+    text-align: center;
+    color: $copyright;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 65px;
+    width: 100%;
+    overflow: hidden;
+    
+}

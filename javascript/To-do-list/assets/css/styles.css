@@ -1,0 +1,79 @@
+/* === VARIABLES === */
+/* === Components === */
+* {
+  font-family: "Open Sans", sans-serif;
+  color: #ff5124;
+  font-weight: 800;
+}
+
+html {
+  margin: 0px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #3CBC8D;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #3CBC8D;
+  border: 2px solid #ff5124;
+  width: 65%;
+  padding: 20px;
+  background-color: #f56b49;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+}
+
+#task-form {
+  display: flex;
+  justify-content: center;
+}
+
+#task-input {
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ff5124;
+  border-radius: 4px;
+}
+#task-input:hover {
+  border: 2px solid #fccec2;
+}
+#task-input:focus {
+  outline: none !important;
+}
+
+button {
+  margin-left: 10px;
+  border-radius: 3px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #ff5124;
+  color: #fccec2;
+}
+
+h1,
+h5 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fccec2;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 65px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=styles.css.map */
