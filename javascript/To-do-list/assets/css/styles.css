@@ -10,59 +10,32 @@ html {
   height: 100%;
   display: flex;
   justify-content: center;
-  background-color: #3CBC8D;
+  background-color: #0d75ec;
 }
 
 body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #3CBC8D;
+  background-color: #0d75ec;
   border: 2px solid #ff5124;
   width: 65%;
   padding: 20px;
   background-color: #f56b49;
+  border-radius: 20px;
+  box-shadow: 2px 2px #f1f1f1;
 }
 
-.list {
-  display: flex;
-  justify-content: center;
-}
-
-#task-form {
-  display: flex;
-  justify-content: center;
-}
-
-#task-input {
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ff5124;
-  border-radius: 4px;
-}
-#task-input:hover {
-  border: 2px solid #fccec2;
-}
-#task-input:focus {
-  outline: none !important;
-}
-
-button {
-  margin-left: 10px;
-  border-radius: 3px;
-  color: #ff5124;
-}
-button:hover {
-  cursor: pointer;
-  background-color: #ff5124;
+h1 {
   color: #fccec2;
-}
-
-h1,
-h5 {
-  text-transform: uppercase;
   text-align: center;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+h5 {
   color: #fccec2;
+  text-align: center;
 }
 
 .footer {
@@ -72,46 +45,87 @@ h5 {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 100px;
+  height: 120px;
   width: 100%;
   overflow: hidden;
+  font-weight: 300;
+}
+
+#newtask {
+  position: relative;
+  padding: 50px 5px;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+
+#newtask input {
+  width: 75%;
+  height: 15px;
+  padding: 8px;
+  color: #f56b49;
+  font-weight: 500;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  border: 2px solid #ff5124;
+  outline: none;
+}
+#newtask input:focus {
+  border-color: #fccec2;
+  box-shadow: 1px 1px #fccec2;
+}
+
+#tasks {
+  width: 90%;
+  position: relative;
+  color: #f1f1f1;
+  font-weight: 300;
+}
+
+#newtask button {
+  float: right;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #f1f1f1;
+  color: #ff5124;
+  cursor: pointer;
+  outline: none;
+  width: 20%;
+  height: 35px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid #ff5124;
+  margin-left: 3px;
+}
+#newtask button:hover {
+  background-color: #ff5124;
+  color: #f1f1f1;
+  border: 2px solid #f1f1f1;
 }
 
 #clear-list {
-  width: 50%;
-  height: 41%;
-  padding: 25px;
-  align-self: center;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-/* === TASKS === */
-.task-list {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-}
-
-.checkbox {
-  display: flex;
   justify-content: center;
+  width: 20%;
+  height: 40px;
+  padding: 15px;
+  border-radius: 5px;
+  align-self: center;
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid #ff5124;
+  background-color: #f1f1f1;
+  color: #ff5124;
 }
-.checkbox:hover {
+#clear-list:hover {
   cursor: pointer;
   background-color: #ff5124;
-  color: #fccec2;
-}
-
-.list {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-}
-
-.li-text {
-  color: #fccec2;
+  color: #f1f1f1;
+  border: 2px solid #f1f1f1;
 }
 
 /*# sourceMappingURL=styles.css.map */
