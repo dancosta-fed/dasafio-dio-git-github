@@ -13,7 +13,6 @@ $copyright: #fccec2;
 /* === Components === */
 * {
     font-family: 'Open Sans', sans-serif;
-    color: $font-color;
     font-weight: 800;
 }
 html{
@@ -67,6 +66,7 @@ body{
  button{
     margin-left: 10px;
     border-radius: 3px;
+    color: $font-color;
     
 
     &:hover{
@@ -85,12 +85,53 @@ h5{
 
 .footer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 65px;
+    height: 100px;
     width: 100%;
     overflow: hidden;
     
+}
+
+#clear-list{
+    width: 50%;
+    height: 41%;
+    padding: 25px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* === TASKS === */
+
+.task-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox{
+    display: flex;
+    justify-content: center;
+
+    &:hover{
+        cursor: pointer;
+        background-color: $font-color;
+        color: $copyright;
+    }
+}
+
+.list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+
+}
+
+.li-text{
+    color: $copyright;
 }

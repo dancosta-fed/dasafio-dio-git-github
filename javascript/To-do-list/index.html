@@ -11,13 +11,22 @@
     <div id="list">
         <form id="task-form">
             <input id="task-input" name="tarefa" type="text" placeholder="Digite aqui sua tarefa" />
-            <button type="submit">Adicionar</button>
+            <button id='submit' type="submit">Adicionar</button>
         </form>
-        <div id="tasks"></div>
+        <div id="tasks">
+            <ul>
+                <li class="task-list">
+                   <div class="list"><input class="checkbox" type="checkbox"><p class="li-text">lavar o carro</p></div> 
+                   <div class="list"><input class="checkbox" type="checkbox"><p class="li-text">lavar o carro</p></div> 
+                    
+                </li>
+            </ul>
+        </div>
     </div>
 
     <script src="assets/scripts.js"></script>
     <footer class="footer">
+        <button id='clear-list' type="submit">Limpar Lista</button>
         <h5>Created by &copyDan Costa</h5>
     </footer>
 </body>
