@@ -2,6 +2,7 @@ const currentNumber = document.getElementById("currentNumber");
 const dec = document.getElementById("decrement"); 
 const inc = document.getElementById("increment")
 
+
 let count = 0;
 
 function increment() {
@@ -10,7 +11,10 @@ function increment() {
   currentNumber.innerHTML = count;
 
   if (count >= 5){
-    currentNumber.style.color = "#0494ef";
+    currentNumber.style.color = "lightcoral"; //#0494ef
+    currentNumber.style.transition ="2s";
+    document.body.style.backgroundColor ="lightcoral";
+    document.body.style.transition ="2s";
   }
 
   if (count >= 10) {
@@ -26,7 +30,10 @@ function decrement() {
   currentNumber.innerHTML = count;
 
   if (count < 5){
-    currentNumber.style.color = "#d91e2b";
+    currentNumber.style.color = "#f56b49";
+    currentNumber.style.transition ="2s";
+    document.body.style.backgroundColor ="#f56b49";
+    document.body.style.transition ="2s";
   }
 
   if (count <= 0) {

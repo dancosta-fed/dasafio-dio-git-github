@@ -12,6 +12,10 @@ h1 {
   text-align: center;
 }
 
+h5 {
+  color: antiquewhite;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -53,7 +57,6 @@ body {
   align-items: center;
   margin: 0 20px;
   font-size: 16pt;
-  color: #d91e2b;
   font-weight: 800;
   font-size: 35px;
 }

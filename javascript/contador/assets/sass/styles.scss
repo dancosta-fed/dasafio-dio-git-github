@@ -7,8 +7,9 @@ $bg-color: #f56b49;
 $font-color: #ff5124;
 $btn-bg: #fccec2;
 $btn-color: lightcoral;
-$num-color: #d91e2b;
+$num-color: #f56b49;
 $incColor: #0494ef;
+$copyright: antiquewhite;
 
 /* === Components === */
 
@@ -21,6 +22,10 @@ $incColor: #0494ef;
 h1{
     text-transform: uppercase;
     text-align: center;
+}
+
+h5 {
+    color: $copyright;
 }
 
 body {
@@ -66,7 +71,6 @@ body {
     align-items: center;
     margin: 0 20px;
     font-size: 16pt;
-    color: $num-color;
     font-weight: 800;
     font-size: 35px;
     
