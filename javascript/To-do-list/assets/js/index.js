@@ -1,6 +1,7 @@
 const userInput = document.querySelector(".to-do input");
 const addBtn = document.querySelector(".to-do button");
 const toDoList = document.querySelector(".tasks");
+const clearAll = document.querySelector(".footer button")
 
 // ==== Fazendo um botão de ADD ficar disabled até que algo seja inserido ==== //
 userInput.onkeyup = ()=>{
@@ -58,5 +59,15 @@ function taskDone(index){
     // update
     localStorage.setItem("Nova Lista", JSON.stringify(listArr));
     showTasks();
+}
+
+// ==== Usar o Botão de limpar tudo ==== //
+clearAll.onclick = () =>{
+    listArr = [];
+
+    // update
+    localStorage.setItem("Nova Lista", JSON.stringify(listArr));
+    showTasks();
+
 }
 

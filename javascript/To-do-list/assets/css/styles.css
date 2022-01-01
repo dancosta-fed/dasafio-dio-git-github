@@ -6,36 +6,33 @@
 }
 
 html {
-  margin: 0px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
+  margin: 25px;
+  height: 80%;
   background-color: #0d75ec;
 }
 
-body {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #0d75ec;
-  border: 2px solid #ff5124;
-  width: 65%;
   padding: 20px;
-  background-color: #f56b49;
-  border-radius: 20px;
-  box-shadow: 2px 2px #f1f1f1;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  max-width: 100% !important;
+  background-color: #0494ef;
 }
 
 h1 {
-  color: #fccec2;
+  color: #f0f0f0;
   text-align: center;
-  font-size: 50px;
   margin-bottom: 0;
 }
 
 h5 {
   color: #fccec2;
   text-align: center;
+  font-size: 15px !important;
+  margin-top: 10px !important;
 }
 
 .footer {
@@ -61,14 +58,14 @@ h5 {
 
 #newtask input {
   width: 75%;
-  height: 15px;
+  height: 33px;
   padding: 8px;
-  color: #f56b49;
+  color: #0d75ec;
   font-weight: 500;
   border-radius: 5px;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
-  border: 2px solid #ff5124;
+  border: 2px solid #f0f0f0;
   outline: none;
 }
 #newtask input:focus {
@@ -77,10 +74,11 @@ h5 {
 }
 
 #tasks {
-  width: 90%;
+  max-width: 96%;
   position: relative;
   color: #f1f1f1;
   font-weight: 300;
+  overflow: auto;
 }
 
 #newtask button {
@@ -88,20 +86,20 @@ h5 {
   font-weight: 500;
   font-size: 16px;
   background-color: #f1f1f1;
-  color: #ff5124;
+  color: #0d75ec;
   cursor: pointer;
   outline: none;
   width: 20%;
   height: 35px;
   border-radius: 5px;
   font-family: "Poppins", sans-serif;
-  border: 2px solid #ff5124;
+  border: 2px solid #f0f0f0;
   margin-left: 3px;
   opacity: 0.6;
   pointer-events: none;
 }
 #newtask button:hover {
-  background-color: #ff5124;
+  background-color: #0d75ec;
   color: #f1f1f1;
   border: 2px solid #f1f1f1;
 }
@@ -121,14 +119,15 @@ h5 {
 
 li {
   font-size: 20px;
-  background-color: #fccec2;
-  color: #ff5124;
+  background-color: #0d75ec;
+  color: #f0f0f0;
   margin-bottom: 2px;
   padding: 5px;
   border-radius: 3px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  overflow: auto;
 }
 
 .far {
@@ -151,13 +150,13 @@ li {
   font-weight: 500;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
-  border: 2px solid #ff5124;
+  border: 2px solid #f0f0f0;
   background-color: #f1f1f1;
-  color: #ff5124;
+  color: #0d75ec;
 }
 #clear-list:hover {
   cursor: pointer;
-  background-color: #ff5124;
+  background-color: #0d75ec;
   color: #f1f1f1;
   border: 2px solid #f1f1f1;
 }
