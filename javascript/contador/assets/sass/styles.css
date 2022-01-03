@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+/* === VARIABLES === */
+/* === Components === */
+* {
+  font-family: 'Open Sans', sans-serif;
+  color: #ff5124;
+  font-weight: 800;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h5 {
+  color: antiquewhite;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f56b49;
+}
+
+.btn-count {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #ff5124;
+  background-color: #fccec2;
+  color: lightcoral;
+  font-size: 16pt;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.btn-count:hover {
+  cursor: pointer;
+  background-color: #f56b49;
+  color: #fccec2;
+}
+
+.btn {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#currentNumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px;
+  font-size: 16pt;
+  font-weight: 800;
+  font-size: 35px;
+}
+
+.box {
+  border: 2px solid #ff5124;
+  padding: 5px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: #fccec2;
+  margin-top: 170px;
+}
+/*# sourceMappingURL=styles.css.map */
