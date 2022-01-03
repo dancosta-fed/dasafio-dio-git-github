@@ -4,7 +4,8 @@ Este Repo foi feito para que pudesse addicionar todas as aulas, projetos e desaf
 ## Projetos Desenvolvidos
 - Recriando Netflix.
 
-- ps.: Escrevi o título do Repo errado. Não é dAsafio, mas dEsafio.
+// ==============================================================//
+ps.: Escrevi o título do Repo errado. Não é dAsafio, mas dEsafio.
 
 _Por Daniel de Oliveira Costa_
 
