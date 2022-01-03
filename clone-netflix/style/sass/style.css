@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,500&family=Montserrat:ital,wght@0,400;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #141414;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+header .logo {
+  color: #32a86d;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header nav a {
+  color: #AAA;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.main-movie {
+  font-size: 16px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../img/skate-or-die-bd.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url("../../img/skate-or-die-bd.jpeg");
+  height: 400px;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.btn-container {
+  margin-top: 40px;
+}
+/*# sourceMappingURL=style.css.map */
